@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fffcf2;
+  background-image: url("/IMG/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  font-size: 14px;
+  color: #252422;
+  font-family: "Quicksand", Tahoma, serif;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Ruthie", "Times New Roman", serif;
+  font-size: 100px;
+  font-weight: 100;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 40px auto;
+}
+
+h2,
+h3 {
+  font-family: "Indie Flower", "Times New Roman", serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: -10px;
+}
+
+p {
+  text-align: justify;
+  text-indent: 20px;
+}
+
+div.slider-libros {
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  overflow: auto;
+  position: relative;
+  white-space: nowrap;
+  padding-bottom: 3px;
+  margin-bottom: 30px;
+}
+
+.libro {
+  height: 150px;
+  margin: 5px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.libro:hover,
+.libro.activo {
+  opacity: 1;
+}
+
+div.card-container {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50% 20% / 10% 40%;
+  width: 600px;
+  margin: auto;
+  padding: 50px;
+  overflow: scroll;
+}
+
+.card {
+  display: none; /* Oculta todas las tarjetas por defecto */
+}
+
+.card.active {
+  display: block; /* Muestra solo la tarjeta activa */
+}
+
+div.rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+div.stars-container {
+  margin-right: 50px;
+}
+
+.star,
+.spice {
+  height: 20px;
+}
+
+.star-empty,
+.spice-empty {
+  filter: grayscale(100%);
+}
