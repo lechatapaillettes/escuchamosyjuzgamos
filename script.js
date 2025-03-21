@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   const libros = document.querySelectorAll(".libro");
   const cards = document.querySelectorAll(".card");
+  const slider = document.querySelector(".slider-libros");
+  const prevButton = document.getElementById("prev");
+  const nextButton = document.getElementById("next");
 
   // Mostrar la primera card por defecto
   if (cards.length > 0) {
@@ -20,6 +23,21 @@ document.addEventListener("DOMContentLoaded", function () {
         cards[index].style.display = "block";
         libro.classList.add("activo");
       }
+    });
+  });
+
+  // Scroll functionality for the arrows
+  prevButton.addEventListener("click", function () {
+    slider.scrollBy({
+      left: -200, // Adjust the scroll amount as needed
+      behavior: "smooth",
+    });
+  });
+
+  nextButton.addEventListener("click", function () {
+    slider.scrollBy({
+      left: 200, // Adjust the scroll amount as needed
+      behavior: "smooth",
     });
   });
 });
