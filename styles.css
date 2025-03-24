@@ -122,6 +122,7 @@ div.card-container {
   border-radius: 50% 20% / 10% 40%;
   max-width: 600px;
   margin: auto;
+  margin-bottom: 30px;
   padding: 50px;
 }
 
@@ -169,6 +170,17 @@ p.text-labels {
   text-indent: 0px;
 }
 
+div.music-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img.music {
+  height: 35px;
+  margin: 0 20px;
+}
+
 footer {
   margin-top: auto;
   margin: auto;
@@ -176,7 +188,7 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-  
+
   h1 {
     font-size: 50px;
   }
@@ -218,9 +230,18 @@ footer {
 
   div.card-container {
     margin: 15px;
+    padding: 25px 30px;
   }
 
   p.text-labels {
     font-size: 7px;
+  }
+
+  img.music {
+    height: 25px;
+  }
+
+  footer {
+    font-size: 8px;
   }
 }
