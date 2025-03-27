@@ -241,7 +241,7 @@ footer {
     height: 25px;
   }
 
-  footer {
-    font-size: 6px;
+  footer p {
+    font-size: 7px;
   }
 }
