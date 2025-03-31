@@ -28,6 +28,10 @@ body {
   flex-direction: column;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 h1 {
   color: #fff;
   font-family: "Ruthie", "Times New Roman", serif;
